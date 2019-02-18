@@ -38,7 +38,7 @@ Because we do not want to count/consider the no. of times users double-clicked o
 
 
 1. **Which Distribution?**
-We expect the Click-through-probability to follow a *Binomial distribution*
+We expect the Click-through-probability to follow a *Binomial distribution*. 
 
 
 
@@ -52,27 +52,28 @@ Calculating a CI:
 
 ### Hypothesis Testing steps
 
-* Null hypo Ho: p<sub>control</sub> = p<sub>exposed</sub>
-* Alternative hypo Ha:   p<sub>control</sub> - p<sub>exposed</sub> not equal 0.
+* Null hypothesis H<sub>o</sub>: p<sub>control</sub> = p<sub>exposed</sub>
+* Alternative hypothesis H<sub>a</sub>:   p<sub>control</sub> - p<sub>exposed</sub> not equal 0.
 * Calculate Prob(p<sub>exposed</sub> - p<sub>control</sub> | Ho), which tells us the difference we observed could have occurred by chance, or if it would be very unlikely to have occurred if the null hypothesis were true.
 
-* Choose a cut-off threshold, called Alpha, to determine...
+* Choose a cut-off threshold, called _alpha_, to determine...
 
+* Reject Null hypothesis if 
 
 
 ### Comparing Two Samples
 
+
+* **Pooled probability, p&#770;<sub>pool</sub> of a click across groups** (p-hat:an estimated p) = p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
+
 **Pooled Standard Error**
-
-* **Pooled probability, p&#770;<sub>pool</sub> of a click across groups** = p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
-
 * **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/N<sub>cont</sub> + 1/N<sub>exp</sub>))
 
 * **difference _d_**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
 
-_d_ ~ N(0, SE<sub>pool</sub>)
-Ho: _d_ = 0
-Ha:  reject null if _d_ > 2 * SE<sub>pool</sub>, d < -2 * SE<sub>pool</sub>
+Expect d&#770; ~ Normal(0, SE<sub>pool</sub>)
+**H<sub>o</sub>**: d&#770; = 0
+**H<sub>a</sub>**:  reject null if d&#770; > 1.96 * SE<sub>pool</sub>, d&#770; or, < -1.96 * SE<sub>pool</sub>
 
 
 **Practically Significant, or Substantive**
