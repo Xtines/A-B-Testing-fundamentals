@@ -137,21 +137,38 @@ Use [this calculator](http://www.evanmiller.org/ab-testing/sample-size.html) to 
 
 ### Defining metrics with other techniques
 
+- Experiments
+- External data
+- UER
+- Focus Group
+- Survey
+- Retrospective analysis
+
+
+#### Comparing to external data
 See this [pdf link](https://s3-us-west-2.amazonaws.com/gae-supplemental-media/additional-techniquespdf/additional_techniques.pdf) for Additional Techniques for Brainstorming and Validating Metrics
 These techniques can help you get an understanding of your users, which you can use to come up with
 ideas for metrics, validate your existing metrics, or even brainstorm ideas of what you might want to test in
 your experiments in the first place.
 
 
-#### Subsection title
-Text 
+#### Techniques to gather additional data
+These methods vary across two dimensions of depth and no. of participants. 
+
+* User Experience Research (UER)
+* Focus groups
+* Surveys from recruiting a group of users to ask them questions
+	* useful for metrics you cannot directly measure
+	* careful that answers may be dependent on how questions are phrased
 
 
 ### Section title
 
 
+
 #### Subsection title
 Text 
+
 
 
 ### Section title
