@@ -66,7 +66,7 @@ Calculating a CI:
 
 * **Pooled probability, p&#770;<sub>pool</sub> of a click across groups** = p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
-* **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/Ncont + 1/Nexp))
+* **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/N<sub>cont</sub> + 1/N<sub>exp</sub>))
 
 * **difference _d_**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
 
@@ -98,14 +98,13 @@ This is where we need to figure out *how many* page views we need in order to ge
 * beta (_&beta;_) = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
 	* means you are likely to fail to design an experiment that actually did have a measured difference in response rates.
 
-	*ex)* larger measured differences will have a lower beta, that is, a lower chance of error.
+	* larger measured differences will have a lower beta, that is, a lower chance of error.
 
 * Confidence level = 1 - _&alpha;_
 * 1 - _&beta;_ = statistical power/sensitivity (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
 ** the need to balance _&alpha;_ & _&beta;_:**
 Why?
-
 
 
 
@@ -120,9 +119,6 @@ Text text text
 
 https://www.w3schools.com/html/html_entities.asp
 http://sites.psu.edu/symbolcodes/codehtml/#math
-
-
-
 
 
 
