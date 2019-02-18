@@ -142,7 +142,10 @@ Use [this calculator](http://www.evanmiller.org/ab-testing/sample-size.html) to 
 - UER
 - Focus Group
 - Survey
-- Retrospective analysis
+- Retrospective analysis with past data: 
+If you are running experiments, you must have logs or other data capture mechanisms to see what users do. Running analyses on this existing set of observational data withoutan experiment structure is called **retrospective analysis, or observational analysis**. These types of analyses are useful for generating ideas for A/B tests and for validating metrics. 
+For example, if you observe something in a UER study, you could then go looking for that pattern in your logs to see if that observation bears out and is worth creating a metric about. You could look at the logs to see what the distribution of the latency of video loads might be and when the next user action is to see if that’s an interesting area for exploration. If you observe that a few students in a UER study are getting stuck on a particular quiz, you could analyze all interactions with that quiz to see if that is borne out at scale. Oftentimes, the usefulness of these retrospective analyses is
+determined by how you frame the question and the analysis.
 
 
 #### Comparing to external data
@@ -162,8 +165,15 @@ These methods vary across two dimensions of depth and no. of participants.
 	* careful that answers may be dependent on how questions are phrased
 
 
-### Section title
+### Clicks - metric definitions
 
+#### Click metric definitions
+
+Def #1 (Cookie probability): For each <time interval>, number of cookies that click divided by number of cookies
+
+Def #2 (Pageview probability): Number of pageviews with a click within <time interval> divided by number of pageviews
+
+Def #3 (Rate): Number of clicks divided by number of pageviews
 
 
 #### Subsection title
@@ -171,6 +181,7 @@ Text
 
 
 
+
 ### Section title
 
 
@@ -180,7 +191,8 @@ Text
 
 
 
-## Lesson 4) 
+
+## Lesson 4) Designing an Experiment: Target population, sizing, duration vs. exposure
 
 
 ### Section title
