@@ -21,6 +21,7 @@ Course Overview - 4 sections
 The syllabus for this online class can be found in this [Udacity course link][Udacity on A/B Test].
 This course will cover the design and analysis of A/B tests, also known as split tests, which are online experiments used to test potential improvements to a website or mobile application. Two versions of the website are shown to different users - usually the existing website and a potential change. Then, the results are analyzed to determine whether the change is an improvement worth launching. This course will cover how to choose and characterize metrics to evaluate your experiments, how to design an experiment with enough statistical power, how to analyze the results and draw valid conclusions, and how to ensure that the the participants of your experiments are adequately protected.
 
+https://www.w3schools.com/html/html_entities.asp
 
 ### Overview of A/B Testing
 **Overview of Business Example:** Audacity, an education provider, creates online finance courses. Considering their customer funnel, we'll consider a change in one of their website features, such as the "Start" button.
@@ -42,10 +43,11 @@ Because we do not want to count/consider the no. of times users double-clicked o
 We expect the Click-through probability to follow a *Binomial distribution*
 
 
+
 2. **Confidence Intervals**
 Calculating a CI:
-	*  rule of thumb: if N * p-hat (<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) > 5, then it's safe to assume the distribution to be approx. normal
-	*  margin of error = z * √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>  * (1 - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> ) /n)
+	*  rule of thumb: if N * p-hat p&#770; > 5, then it's safe to assume the distribution to be approx. normal
+	*  margin of error = z * √(  p&#770; * (1 - p&#770; ) /n)
 ​
 
 3. **Hypothesis Testing, or Establishing Statistical Signifiance** - A way to establish how likely it is your results occurred by chance.
