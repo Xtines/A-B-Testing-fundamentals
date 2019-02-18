@@ -89,22 +89,24 @@ What size change matters enough to us?
 This is where we need to figure out *how many* page views we need in order to get a statistically significant result to measure the change in CTP%.
 
 **Statistical power** defined:
-> **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed > (in other words, more page views in your control and exposed groups)
-
+> **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
+>
 
 **How many page views or N?**
 
-* alpha (_&alpha;_) = P(rejecting null | Ho true); The probability you are willing to accept for **incorrectly concluding that your improvement was successful**, even though it was not.
+* alpha (_&alpha;_) = P(rejecting null | Ho true): The probability you are willing to accept for **incorrectly concluding that there was a measured effect**, even though there was not. Plainly speaking, it occurs when we are observing a difference when in truth there is none (or more specifically - no statistically significant difference). 
 
-* beta (_&beta;_) = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
+* beta (_&beta;_) = P(fail to reject null| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was. 
+
+	* the error of not rejecting a null hypothesis when the alternative hypothesis is the true state of nature. In other
+words, this is the error of failing to accept an alternative hypothesis when you don't have adequate power. Plainly speaking, it occurs when we are failing to observe a difference when in truth there is one. 
 	* means you are likely to fail to design an experiment that actually did have a measured difference in response rates.
-
 	* larger measured differences will have a lower beta, that is, a lower chance of error.
 
-* Confidence level = 1 - _&alpha;_
-* 1 - _&beta;_ = statistical power/sensitivity (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
+* **Confidence level** = 1 - _&alpha;_
+* 1 - _&beta;_ = **statistical power/sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
-** the need to balance _&alpha;_ & _&beta;_:**
+** Why the need to balance _&alpha;_ & _&beta;_:**
 Why?
 
 
