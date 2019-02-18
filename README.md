@@ -97,9 +97,9 @@ This is where we need to figure out *how many* page views we need in order to ge
 
 **How many page views or N?**
 
-* alpha = P(rejecting null | Ho true); "he probability you are willing to accept for **incorrectly concluding that your improvement was successful**, even though it was not."
+* alpha (03B1) = P(rejecting null | Ho true); The probability you are willing to accept for **incorrectly concluding that your improvement was successful**, even though it was not.
 
-* beta B = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
+* beta (03B2) = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
 -> means you are likely to fail to design an experiment that actually did have a measured difference in response rates.
 
 *ex)* larger measured differences will have a lower beta, that is, a lower chance of error.
