@@ -107,16 +107,26 @@ words, this is the error of failing to accept an alternative hypothesis when you
 * 1 - _&beta;_ = **statistical power/sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
 ** Why the need to balance _&alpha;_ & _&beta;_:**
-Why?
+
+	* in general, we want to have a high level of power/sensitivity at the practical significance boundary, often around 80%
+	* As your sample size goes up with larger samples:
+		* _&alpha;_ remains the same
+		* _&beta;_ is lower, or the power goes up
 
 
 
-###Section title
+### Section title
 
 
 #### Subsection title
-Text text text
+Text
 
+
+### Section title
+
+
+#### Subsection title
+Text 
 
 
 
