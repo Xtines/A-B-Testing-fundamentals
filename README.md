@@ -243,11 +243,15 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 - studying a new feature/change
 
 
-### Variability or measured by variance
+### Variability (measured by variance)
 
 
-#### Subsection title
-Text 
+#### Calculating variability by estimating variance 
+
+**The mean and est. variance** depends on the assumed distribution. 
+
+Summary of type of metric / distribution / estimated variance: 
+![alt text](/images/3-22calcvariance.png)
 
 
 #### Example) Difference between Poisson variables
@@ -257,8 +261,10 @@ The difference in two Poisson means is not described by a simple distribution th
 If you aren’t confident in the Poisson assumption, or if you just want something more practical - and frankly, more common in engineering, see the Empirical Variability section of this lesson.
 
 
-#### Subsection title
+#### Empirical Variability
+
 Text 
+
 
 
 
