@@ -45,7 +45,7 @@ We expect the Click-through probability to follow a *Binomial distribution*
 2. **Confidence Intervals**
 Calculating a CI:
 	*  rule of thumb: if N * p-hat (<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) > 5, then it's safe to assume the distribution to be approx. normal
-	*  margin of error = z * √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) *(1 - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> )/n)
+	*  margin of error = z * √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>  * (1 - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> ) /n)
 ​
 
 3. **Hypothesis Testing, or Establishing Statistical Signifiance** - A way to establish how likely it is your results occurred by chance.
