@@ -73,7 +73,10 @@ Calculating a CI:
 
 Expect d&#770; ~ Normal(0, SE<sub>pool</sub>)
 **H<sub>o</sub>**: d&#770; = 0
-**H<sub>a</sub>**:  reject null if d&#770; > 1.96 * SE<sub>pool</sub>, d&#770; or, < -1.96 * SE<sub>pool</sub>
+
+**H<sub>a</sub>**:  reject null if
+d&#770; < 1.96 * SE<sub>pool</sub>, d&#770; or, 
+d&#770;> -1.96 * SE<sub>pool</sub>
 
 
 **Practically Significant, or Substantive**
