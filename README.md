@@ -176,10 +176,39 @@ Def #2 (Pageview probability): Number of pageviews with a click within <time int
 Def #3 (Rate): Number of clicks divided by number of pageviews
 
 
-#### Subsection title
+#### Segmenting and filtering data
+
+When we see an anamoly in a metric, it would be helpful to look at the metric performance across segments to find/isolate where that anamoly occurs. 
+
+
+### Categories of Summary metrics
+
+* Sums and Counts
+* Distributional metrics: Means, medians, percentiles
+* Probability and rates
+* Ratios: more general than rates, can have any value
+
+
+#### 1. Distribution of the data (with retroactive analysis)
+
+Common distributions - 
+* Normal distribution: look at the shape of the data plot of frequency of events against all different values of the events 
+
+
+#### Common distributions in online data
+Let’s talk about some common distributions that come up when you look at real user data.
+
+For example, let’s measure the rate at which users click on a result on our search page, analogously, we could measure the average staytime on the results page before traveling to a result. In this case, you’d probably see what we call a Poisson distribution, or that the stay times would be exponentially distributed.
+
+Another common distribution of user data is a “power-law,” Zipfian or Pareto distribution. That basically means that the probability of a more extreme value, z, decreases like 1/z (or 1/z^exponent). This distribution also comes up in other rare events such as the frequency of words in a text (the most common word is really really common compared to the next word on the list). These types of heavy-tailed distributions are common in internet data.
+
+Finally, you may have data that is a composition of different distributions - latency often has this characteristic because users on fast internet connection form one group and users on dial-up or cell phone networks form another. Even on mobile phones you may have differences between carriers, or newer cell phones vs. older text-based displays. This forms what is called a mixture distribution that can be hard to detect or characterize well.
+
+The key here is not to necessarily come up with a distribution to match if the answer isn’t clear - that can be helpful - but to choose summary statistics that make the most sense for what you do have. If you have a distribution that is lopsided with a very long tail, choosing the mean probably doesn’t work for you very well - and in the case of something like the Pareto, the mean may be infinite!
+
+
+#### 2. Sensitivity and robustness
 Text 
-
-
 
 
 ### Section title
@@ -188,6 +217,8 @@ Text
 #### Subsection title
 Text 
 
+#### Subsection title
+Text 
 
 
 
