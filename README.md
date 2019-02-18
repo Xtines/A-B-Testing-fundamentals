@@ -64,14 +64,15 @@ Calculating a CI:
 
 **Pooled Standard Error -**
 
-* **Pooled probability, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> <sub>pool</sub> ** of a click across groups= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
+* **Pooled probability, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> <sub>pool</sub> of a click across groups= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
 * **SE<sub>pool</sub>** = √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> * (1- <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> )*(1/Ncont + 1/Nexp))
 
 * **difference d**= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(exp) - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(cont)
-d ~ N(0, SEpool)
+
+d ~ N(0, SE<sub>pool</sub>)
 Ho: d = 0
-Ha:  reject null if d > 2 *SEpool, d < -2*SEpool
+Ha:  reject null if d > 2 * SEpool, d < -2 * SEpool
 
 
 **Practically Significant, or Substantive**
