@@ -43,10 +43,9 @@ Because we do not want to count/consider the no. of times users double-clicked o
 We expect the Click-through probability to follow a *Binomial distribution*
 
 
-
 2. **Confidence Intervals**
 Calculating a CI:
-	*  rule of thumb: if N * p-hat p&#770; > 5, then it's safe to assume the distribution to be approx. normal
+	*  rule of thumb: if N * p&#770; > 5, then it's safe to assume the distribution to be approx. normal
 	*  margin of error = z * √(  p&#770; * (1 - p&#770; ) /n)
 ​
 
@@ -66,11 +65,11 @@ Calculating a CI:
 
 **Pooled Standard Error -**
 
-* **Pooled probability, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> <sub>pool</sub> of a click across groups= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
+* **Pooled probability, p&#770 <sub>pool</sub> of a click across groups= p&#770(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
-* **SE<sub>pool</sub>** = √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> * (1- <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> )*(1/Ncont + 1/Nexp))
+* **SE<sub>pool</sub>** = √( p&#770<sub>pool</sub> * (1- p&#770<sub>pool</sub> )*(1/Ncont + 1/Nexp))
 
-* **difference d**= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(exp) - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(cont)
+* **difference d**= p&#770<sub>pool</sub>(exp) - p&#770<sub>pool</sub>(cont)
 
 d ~ N(0, SE<sub>pool</sub>)
 Ho: d = 0
