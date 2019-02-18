@@ -69,7 +69,7 @@ Calculating a CI:
 **Pooled Standard Error**
 * **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/N<sub>cont</sub> + 1/N<sub>exp</sub>))
 
-* **difference _d_**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
+* **difference _d_**= p&#770;<sub>exp</sub> - p&#770;<sub>cont</sub> = X<sub>exp</sub> / N<sub>exp</sub> - X<sub>cont</sub> / N<sub>cont</sub>
 
 Expect d&#770; ~ Normal(0, SE<sub>pool</sub>)
 **H<sub>o</sub>**: d&#770; = 0
@@ -94,9 +94,6 @@ This is where we need to figure out *how many* page views we need in order to ge
 Statistics textbooks frequently define power to mean the same thing as sensitivity, that is, 1 - beta. However, conversationally **power often means the probability that your test draws the correct conclusions, and this probability depends on both alpha and beta.**
 In this course, we'll use the second definition, and we'll use sensitivity to refer to 1 - beta.
 
-Online sample size calculator
-Use this calculator to determine how many page views we'll need to collect in our experiment. Make sure to choose an absolute difference, not a relative difference.
-
 It has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
 
 
@@ -114,11 +111,11 @@ words, this is the error of failing to accept an alternative hypothesis when you
 * **Confidence level** = 1 - _&alpha;_
 * 1 - _&beta;_ = **sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
-** Why the need to balance _&alpha;_ & _&beta;_:**
+** Why the need to balance &alpha; & &beta
 	* in general, we want to have a high level of sensitivity at the practical significance boundary, often around 80%
 	* As your sample size goes up with larger samples:
-		* _&alpha;_ remains the same
-		* _&beta;_ is lower, or the power goes up
+		* &alpha; remains the same
+		* &beta; is lower, or the power goes up
 
 
 #### Online sample size calculator
@@ -134,8 +131,11 @@ Text
 
 
 
-https://www.w3schools.com/html/html_entities.asp
-http://sites.psu.edu/symbolcodes/codehtml/#math
+Math notation resource:
+
+* https://www.w3schools.com/html/html_entities.asp
+
+* http://sites.psu.edu/symbolcodes/codehtml/#math
 
 
 
