@@ -65,17 +65,17 @@ Calculating a CI:
 
 ### Comparing Two Samples
 
-**Pooled Standard Error -**
+**Pooled Standard Error**
 
-* **Pooled probability, p&#770;<sub>pool</sub> of a click across groups= p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
+* **Pooled probability, p&#770;<sub>pool</sub> of a click across groups** = p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
 * **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/Ncont + 1/Nexp))
 
-* **difference d**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
+* **difference _d_**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
 
-d ~ N(0, SE<sub>pool</sub>)
-Ho: d = 0
-Ha:  reject null if d > 2 * SE<sub>pool</sub>, d < -2 * SE<sub>pool</sub>
+_d_ ~ N(0, SE<sub>pool</sub>)
+Ho: _d_ = 0
+Ha:  reject null if _d_ > 2 * SE<sub>pool</sub>, d < -2 * SE<sub>pool</sub>
 
 
 **Practically Significant, or Substantive**
@@ -92,27 +92,26 @@ This is where we need to figure out *how many* page views we need in order to ge
 
 **Statistical power** defined:
 
-* power has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
+* **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
 
 
 **How many page views or N?**
 
-* alpha (#945) = P(rejecting null | Ho true); The probability you are willing to accept for **incorrectly concluding that your improvement was successful**, even though it was not.
+* alpha (_&alpha;_) = P(rejecting null | Ho true); The probability you are willing to accept for **incorrectly concluding that your improvement was successful**, even though it was not.
 
-* beta (#03B2) = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
--> means you are likely to fail to design an experiment that actually did have a measured difference in response rates.
+* beta (_&beta;_) = P(fail to reject| Ho false), or the **probability of falsely failing to conclude there is a measured diff**, depends on how large your effect really was.
+	* means you are likely to fail to design an experiment that actually did have a measured difference in response rates.
 
-*ex)* larger measured differences will have a lower beta, that is, a lower chance of error.
+	*ex)* larger measured differences will have a lower beta, that is, a lower chance of error.
 
-* Confidence level = 1 - alpha
-* 1-beta = statistical power/sensitivity (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
+* Confidence level = 1 - _&alpha;_
+* 1 - _&beta;_ = statistical power/sensitivity (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
-** the need to balance alpha & beta:**
-why?
+** the need to balance _&alpha;_ & _&beta;_:**
+Why?
 
 
 
-****
 
 ###Section title
 
@@ -123,13 +122,8 @@ Text text text
 
 
 
-
-
 https://www.w3schools.com/html/html_entities.asp
 http://sites.psu.edu/symbolcodes/codehtml/#math
-
-
-
 
 
 
