@@ -28,7 +28,7 @@ https://www.w3schools.com/html/html_entities.asp
 
 Steps in the evaluation process -
 
-#### Metric Choice
+### Metric Choice
 
 Two metrics:
 
@@ -48,11 +48,11 @@ We expect the Click-through probability to follow a *Binomial distribution*
 Calculating a CI:
 	*  rule of thumb: if N * p&#770; > 5, then it's safe to assume the distribution to be approx. normal
 	*  margin of error = z * √(  p&#770; * (1 - p&#770; ) /n)
-​
 
 3. **Hypothesis Testing, or Establishing Statistical Signifiance** - A way to establish how likely it is your results occurred by chance.
 
-*Hypothesis Testing steps*
+
+### Hypothesis Testing steps
 
 * Null hypo Ho: p<sub>control</sub> = p<sub>exposed</sub>
 * Alternative hypo Ha:   p<sub>control</sub> - p<sub>exposed</sub> not equal 0.
@@ -62,7 +62,7 @@ Calculating a CI:
 
 
 
-#### **Comparing Two Samples**
+### Comparing Two Samples
 
 **Pooled Standard Error -**
 
@@ -86,7 +86,7 @@ What size change matters enough to us?
 - Can be fair to assume from a business perspective, a 2% change in click-through probability would be practically significant.
 
 
-#### Designing the experiment
+### Designing the experiment
 This is where we need to figure out *how many* page views we need in order to get a statistically significant result to measure the change in CTP%.
 
 **Statistical power** defined:
