@@ -20,7 +20,8 @@ The syllabus for this online class can be found in this [Udacity course link][Ud
 This course will cover the design and analysis of A/B tests, also known as split tests, which are online experiments used to test potential improvements to a website or mobile application. Two versions of the website are shown to different users - usually the existing website and a potential change. Then, the results are analyzed to determine whether the change is an improvement worth launching. This course will cover how to choose and characterize metrics to evaluate your experiments, how to design an experiment with enough statistical power, how to analyze the results and draw valid conclusions, and how to ensure that the the participants of your experiments are adequately protected.
 
 
-### Overview of A/B Testing
+## Lesson 1) Overview of A/B Testing
+
 **Overview of Business Example:** Audacity, an education provider, creates online finance courses. Considering their customer funnel, we'll consider a change in one of their website features, such as the "Start" button.
 
 Steps in the evaluation process -
@@ -34,8 +35,9 @@ Two metrics:
 
 
 *Why is the *Click-through-probability* preferred?*
-Because we do not want to count/consider the no. of times users double-clicked or reloaded a page, we want only want to understand the probability of users who would advance to the next level of the process.
-
+	* Because we do not want to count/consider the no. of times users double-clicked or reloaded a page, we want only want to understand the probability of users who would advance to the next level of the process.
+	* "Rates are often better than probabilities for measuring the usability of a feature such as a button, and increasing the size of the "Start Now" button is probably an attempt to increase the usability. Thus, click-through-rate might have been a better choice. However, click-through-probability is a good choice as well."
+	
 
 1. **Which Distribution?**
 We expect the Click-through-probability to follow a *Binomial distribution*. 
@@ -72,11 +74,15 @@ Calculating a CI:
 * **difference _d_**= p&#770;<sub>exp</sub> - p&#770;<sub>cont</sub> = X<sub>exp</sub> / N<sub>exp</sub> - X<sub>cont</sub> / N<sub>cont</sub>
 
 Expect d&#770; ~ Normal(0, SE<sub>pool</sub>)
+
 **H<sub>o</sub>**: d&#770; = 0
 
 **H<sub>a</sub>**:  reject null if
-d&#770; < 1.96 * SE<sub>pool</sub>, d&#770; or, 
-d&#770;> -1.96 * SE<sub>pool</sub>
+d&#770; > 1.96 * SE<sub>pool</sub>, d&#770; or, 
+d&#770; < -1.96 * SE<sub>pool</sub>
+
+Example:
+![alt text](/images/1-25calcresults.png)
 
 
 **Practically Significant, or Substantive**
@@ -126,6 +132,40 @@ words, this is the error of failing to accept an alternative hypothesis when you
 Use [this calculator](http://www.evanmiller.org/ab-testing/sample-size.html) to determine how many page views we'll need to collect in our experiment. Make sure to choose an absolute difference, not a relative difference.
 
 
+## Lesson 3) Choosing and Characterizing Metrics
+
+
+### Defining metrics with other techniques
+
+See this [pdf link](https://s3-us-west-2.amazonaws.com/gae-supplemental-media/additional-techniquespdf/additional_techniques.pdf) for Additional Techniques for Brainstorming and Validating Metrics
+These techniques can help you get an understanding of your users, which you can use to come up with
+ideas for metrics, validate your existing metrics, or even brainstorm ideas of what you might want to test in
+your experiments in the first place.
+
+
+#### Subsection title
+Text 
+
+
+### Section title
+
+
+#### Subsection title
+Text 
+
+
+### Section title
+
+
+#### Subsection title
+Text 
+
+
+
+
+## Lesson 4) 
+
+
 ### Section title
 
 
@@ -135,11 +175,9 @@ Text
 
 
 Math notation resource:
-
 * https://www.w3schools.com/html/html_entities.asp
 
 * http://sites.psu.edu/symbolcodes/codehtml/#math
-
 
 
 
