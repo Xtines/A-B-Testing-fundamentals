@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title:  "A/B Testing - Udacity course notes"
