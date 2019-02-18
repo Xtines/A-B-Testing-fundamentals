@@ -43,7 +43,6 @@ Two metrics:
 We expect the Click-through-probability to follow a *Binomial distribution*. 
 
 
-
 2. **Confidence Intervals**
 Calculating a CI:
 	*  rule of thumb: if N * p&#770; > 5, then it's safe to assume the distribution to be approx. normal
@@ -250,6 +249,7 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 **The mean and est. variance** depends on the assumed distribution. 
 
 Summary of type of metric / distribution / estimated variance: 
+
 ![alt text](/images/3-22calcvariance.png.png)
 
 
