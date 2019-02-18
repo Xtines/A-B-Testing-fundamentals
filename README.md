@@ -189,7 +189,7 @@ When we see an anamoly in a metric, it would be helpful to look at the metric pe
 * Ratios: more general than rates, can have any value
 
 
-#### 1. Distribution of the data (with retroactive analysis)
+### 1. Distribution of the data (with retroactive analysis)
 
 Common distributions - 
 * Normal distribution: look at the shape of the data plot of frequency of events against all different values of the events 
@@ -207,18 +207,48 @@ Finally, you may have data that is a composition of different distributions - la
 The key here is not to necessarily come up with a distribution to match if the answer isn’t clear - that can be helpful - but to choose summary statistics that make the most sense for what you do have. If you have a distribution that is lopsided with a very long tail, choosing the mean probably doesn’t work for you very well - and in the case of something like the Pareto, the mean may be infinite!
 
 
-#### 2. Sensitivity and robustness
-Text 
+### 2. Sensitivity and robustness
+
+We want a metric that is both sensitive + robust. Idea is to pick a metric that would be able to measure changes you care about, but is robust against changes that you don't care about. 
+For example, the mean of a load time is sensitive to out-liers, while the medium tends to be more robust to outliers. 
+
+#### How to measure them?
+
+* Use an experiment to observe changes in the metric with an introduced change. 
+* an "a versus a" experiment
+* (if cannot run experiments) a retro-active analysis of log data to observe whether metric(s) changed when you know change(s) were made to your site, then see if the metric(s) of interest moved in conjunction with those site changes. 
 
 
-### Section title
+### Absolute vs. relative difference
 
+**Absolute vs. relative difference**
+Suppose you run an experiment where you measure the number of visits to your homepage, and you measure 5000 visits in the control and 7000 in the experiment. Then the absolute difference is the result of subtracting one from the other, that is, 2000. The relative difference is the absolute difference divided by the control metric, that is, 40%.
+
+**Relative differences in probabilities**
+For probability metrics, people often use percentage points to refer to absolute differences and percentages to refer to relative differences. 
+
+For example, if your control click-through-probability (CTP) were 5%, and your experiment click-through-probability were 7%, the absolute difference would be 2 percentage points, and the relative difference would be 40 percent. 
+
+However, sometimes people will refer to the absolute difference as a 2 percent change, so if someone gives you a percentage, it's important to clarify whether they mean a relative or absolute difference!
+
+
+#### Why Relative differences might be preferred
+
+:thumbsup: By using the relative difference as a metric, you can stick with one practical significance boundary over time in spite of the below changes: 
+- When you are running many tests/changes 
+- When your system is changing over time
+- Seasonality factors present
+
+:warning: Downside for using relative difference is the variability; often good to start with the absolute difference then work your way up to relative differences
+- studying a new feature/change
+
+
+### Variability
 
 #### Subsection title
 Text 
 
-#### Subsection title
-Text 
+
 
 
 
