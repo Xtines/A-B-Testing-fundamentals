@@ -44,7 +44,7 @@ We expect the Click-through probability to follow a *Binomial distribution*
 
 2. **Confidence Intervals**
 Calculating a CI:
-	*  rule of thumb: if N * p-hat > 5, then it's safe to assume the distribution to be approx. normal
+	*  rule of thumb: if N * p-hat (<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) > 5, then it's safe to assume the distribution to be approx. normal
 	*  margin of error = z * √(p-hat*(1 - p-hat)/n)
 ​
 
@@ -52,7 +52,7 @@ Calculating a CI:
 
 *Hypothesis Testing steps*
 
-* Null hypo Ho: p-control p<sup>control</sup> = p-exposed p<sup>exposed</sup>
+* Null hypo Ho: p<sub>control</sub> = p<sub>exposed</sub>
 * Alternative hypo Ha:   p-control - p-exposed not equal 0.
 * Calculate Prob(p-exposed - p-control | Ho), which tells us the difference we observed could have occurred by chance, or if it would be very unlikely to have occurred if the null hypothesis were true.
 
