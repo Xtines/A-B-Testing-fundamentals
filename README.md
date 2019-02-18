@@ -48,7 +48,7 @@ We expect the Click-through-probability to follow a *Binomial distribution*
 2. **Confidence Intervals**
 Calculating a CI:
 	*  rule of thumb: if N * p&#770; > 5, then it's safe to assume the distribution to be approx. normal
-	*  margin of error = z * √(  p&#770; * (1 - p&#770; ) /n)
+	*  margin of error = z * SE = z * √(  p&#770; * (1 - p&#770; ) /n)
 
 3. **Hypothesis Testing, or Establishing Statistical Signifiance** - A way to establish how likely it is your results occurred by chance.
 
