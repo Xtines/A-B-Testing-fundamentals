@@ -45,7 +45,7 @@ We expect the Click-through probability to follow a *Binomial distribution*
 2. **Confidence Intervals**
 Calculating a CI:
 	*  rule of thumb: if N * p-hat (<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) > 5, then it's safe to assume the distribution to be approx. normal
-	*  margin of error = z * √(p-hat*(1 - p-hat)/n)
+	*  margin of error = z * √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>) *(1 - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> )/n)
 ​
 
 3. **Hypothesis Testing, or Establishing Statistical Signifiance** - A way to establish how likely it is your results occurred by chance.
@@ -53,8 +53,8 @@ Calculating a CI:
 *Hypothesis Testing steps*
 
 * Null hypo Ho: p<sub>control</sub> = p<sub>exposed</sub>
-* Alternative hypo Ha:   p-control - p-exposed not equal 0.
-* Calculate Prob(p-exposed - p-control | Ho), which tells us the difference we observed could have occurred by chance, or if it would be very unlikely to have occurred if the null hypothesis were true.
+* Alternative hypo Ha:   p<sub>control</sub> - p<sub>exposed</sub> not equal 0.
+* Calculate Prob(p<sub>exposed</sub> - p<sub>control</sub> | Ho), which tells us the difference we observed could have occurred by chance, or if it would be very unlikely to have occurred if the null hypothesis were true.
 
 * Choose a cut-off threshold, called Alpha, to determine...
 
@@ -64,11 +64,11 @@ Calculating a CI:
 
 **Pooled Standard Error -**
 
-* **Pooled probability, phat-pool** of a click across groups= p-hat(pooled) = (Xcont + Xexp)/(Ncont + Nexp)
+* **Pooled probability, <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a> <sub>pool</sub> ** of a click across groups= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a>(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
-* **SE-pool** = √(phat-pool * (1-phat-pool)*(1/Ncont + 1/Nexp))
+* **SE<sub>pool</sub>** = √(<a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> * (1- <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub> )*(1/Ncont + 1/Nexp))
 
-* **difference d**= phat-exp - phat-cont
+* **difference d**= <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(exp) - <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{p}" title="\widehat{p}" /></a><sub>pool</sub>(cont)
 d ~ N(0, SEpool)
 Ho: d = 0
 Ha:  reject null if d > 2 *SEpool, d < -2*SEpool
