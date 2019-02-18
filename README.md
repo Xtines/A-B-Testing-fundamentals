@@ -52,7 +52,7 @@ Calculating a CI:
 
 *Hypothesis Testing steps*
 
-* Null hypo Ho: p-control = p-exposed
+* Null hypo Ho: p-control p<sup>control</sup> = p-exposed p<sup>exposed</sup>
 * Alternative hypo Ha:   p-control - p-exposed not equal 0.
 * Calculate Prob(p-exposed - p-control | Ho), which tells us the difference we observed could have occurred by chance, or if it would be very unlikely to have occurred if the null hypothesis were true.
 
