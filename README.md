@@ -65,15 +65,15 @@ Calculating a CI:
 
 **Pooled Standard Error -**
 
-* **Pooled probability, p&#770; <sub>pool</sub> of a click across groups= p&#770;(pooled) = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
+* **Pooled probability, p&#770;<sub>pool</sub> of a click across groups= p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
-* **SE<sub>pool</sub>** = √( p&#770<sub>pool</sub> * (1- p&#770<sub>pool</sub> )*(1/Ncont + 1/Nexp))
+* **SE<sub>pool</sub>** = √( p&#770; <sub>pool</sub> * (1- p&#770;<sub>pool</sub> )*(1/Ncont + 1/Nexp))
 
 * **difference d**= p&#770;<sub>pool</sub>(exp) - p&#770;<sub>pool</sub>(cont)
 
 d ~ N(0, SE<sub>pool</sub>)
 Ho: d = 0
-Ha:  reject null if d > 2 * SEpool, d < -2 * SEpool
+Ha:  reject null if d > 2 * SE<sub>pool</sub>, d < -2 * SE<sub>pool</sub>
 
 
 **Practically Significant, or Substantive**
