@@ -8,7 +8,7 @@ output: html_document
 ---
 
 
-A/B Testing course from Udacity, built by Google
+A/B Testing course by Udacity, built by Google
 ====================
 
 Course Overview - 4 sections
@@ -29,8 +29,8 @@ Steps in the evaluation process -
 
 Two metrics:
 
-* x **CTR%** = no. of clicks/no. of page views
-* -> **Click-through-probability (CTP%)** = unique visitors who click/unique page visitors. Count at most one child-click per page view.
+* :warning: **CTR%** = no. of clicks/no. of page views
+* :thumbsup: **Click-through-probability (CTP%)** = unique visitors who click/unique page visitors. Count at most one child-click per page view.
 
 
 *Why is the *Click-through-probability* preferred?*
@@ -39,7 +39,6 @@ Because we do not want to count/consider the no. of times users double-clicked o
 
 1. **Which Distribution?**
 We expect the Click-through-probability to follow a *Binomial distribution*
-
 
 
 
@@ -89,8 +88,7 @@ What size change matters enough to us?
 This is where we need to figure out *how many* page views we need in order to get a statistically significant result to measure the change in CTP%.
 
 **Statistical power** defined:
-
-* **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
+> **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed > (in other words, more page views in your control and exposed groups)
 
 
 **How many page views or N?**
