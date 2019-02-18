@@ -250,7 +250,7 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 
 Summary of type of metric / distribution / estimated variance: 
 
-![alt text](/images/3-22calcvariance.png.png)
+![alt text](/images/3-22calcvariance.png)
 
 
 #### Example) Difference between Poisson variables
