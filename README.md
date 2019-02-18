@@ -65,7 +65,6 @@ Calculating a CI:
 
 ### Comparing Two Samples
 
-
 * **Pooled probability, p&#770;<sub>pool</sub> of a click across groups** (p-hat:an estimated p) = p&#770;<sub>pool</sub> = (X<sub>cont</sub> + X<sub>exp</sub>)/(N<sub>cont</sub> + N<sub>exp</sub>)
 
 **Pooled Standard Error**
@@ -81,8 +80,8 @@ Expect d&#770; ~ Normal(0, SE<sub>pool</sub>)
 d&#770; > 1.96 * SE<sub>pool</sub>, d&#770; or, 
 d&#770; < -1.96 * SE<sub>pool</sub>
 
-Example:
-![alt text](/images/1-25calcresults.png)
+Example of calculating CI of difference _d_ using the pooled SE:
+![Lesson 1.25 example](/images/1-25diff_pooledSE.png)
 
 
 **Practically Significant, or Substantive**
@@ -251,7 +250,7 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 **The mean and est. variance** depends on the assumed distribution. 
 
 Summary of type of metric / distribution / estimated variance: 
-![alt text](/images/3-22calcvariance.png)
+![Lesson 3.22 example](/images/3-22calcvariance.png.png)
 
 
 #### Example) Difference between Poisson variables
