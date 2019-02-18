@@ -88,9 +88,17 @@ What size change matters enough to us?
 ### Designing the experiment
 This is where we need to figure out *how many* page views we need in order to get a statistically significant result to measure the change in CTP%.
 
-**Statistical power** defined:
-> **power** has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
->
+**Statistical power**
+
+**Power**
+Statistics textbooks frequently define power to mean the same thing as sensitivity, that is, 1 - beta. However, conversationally **power often means the probability that your test draws the correct conclusions, and this probability depends on both alpha and beta.**
+In this course, we'll use the second definition, and we'll use sensitivity to refer to 1 - beta.
+
+Online sample size calculator
+Use this calculator to determine how many page views we'll need to collect in our experiment. Make sure to choose an absolute difference, not a relative difference.
+
+It has an inverse trade-off with sample size - the smaller the change you want to measure, the larger the size needed (in other words, more page views in your control and exposed groups)
+
 
 **How many page views or N?**
 
@@ -104,22 +112,18 @@ words, this is the error of failing to accept an alternative hypothesis when you
 	* larger measured differences will have a lower beta, that is, a lower chance of error.
 
 * **Confidence level** = 1 - _&alpha;_
-* 1 - _&beta;_ = **statistical power/sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
+* 1 - _&beta;_ = **sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
 ** Why the need to balance _&alpha;_ & _&beta;_:**
-
-	* in general, we want to have a high level of power/sensitivity at the practical significance boundary, often around 80%
+	* in general, we want to have a high level of sensitivity at the practical significance boundary, often around 80%
 	* As your sample size goes up with larger samples:
 		* _&alpha;_ remains the same
 		* _&beta;_ is lower, or the power goes up
 
 
+#### Online sample size calculator
 
-### Section title
-
-
-#### Subsection title
-Text
+Use [this calculator](http://www.evanmiller.org/ab-testing/sample-size.html) to determine how many page views we'll need to collect in our experiment. Make sure to choose an absolute difference, not a relative difference.
 
 
 ### Section title
