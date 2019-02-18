@@ -250,7 +250,7 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 **The mean and est. variance** depends on the assumed distribution. 
 
 Summary of type of metric / distribution / estimated variance: 
-![Lesson 3.22 example](/images/3-22calcvariance.png.png)
+![alt text](/images/3-22calcvariance.png.png)
 
 
 #### Example) Difference between Poisson variables
@@ -266,7 +266,6 @@ Text
 
 
 
-
 ## Lesson 4) Designing an Experiment: Target population, sizing, duration vs. exposure
 
 
@@ -278,11 +277,9 @@ Text
 
 
 
-Math notation resource:
+_Markdown math notation resource:_
 * https://www.w3schools.com/html/html_entities.asp
-
 * http://sites.psu.edu/symbolcodes/codehtml/#math
-
 
 
 [Udacity on A/B Test]: https://de.udacity.com/course/ab-testing--ud257/
