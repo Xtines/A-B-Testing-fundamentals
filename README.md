@@ -58,7 +58,7 @@ Calculating a CI:
 
 * Choose a cut-off threshold, called _alpha_, to determine...
 
-* Reject Null hypothesis if 
+* Reject Null hypothesis if Prob(p<sub>exposed</sub> - p<sub>control</sub> | Ho) < _alpha_
 
 
 ### Comparing Two Samples
