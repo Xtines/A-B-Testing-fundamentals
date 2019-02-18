@@ -28,7 +28,8 @@ https://www.w3schools.com/html/html_entities.asp
 
 Steps in the evaluation process -
 
-####Metric Choice
+#### Metric Choice
+
 Two metrics:
 
 * x **CTR%** = no. of clicks/no. of page views
