@@ -243,13 +243,22 @@ However, sometimes people will refer to the absolute difference as a 2 percent c
 - studying a new feature/change
 
 
-### Variability
+### Variability or measured by variance
+
 
 #### Subsection title
 Text 
 
 
+#### Example) Difference between Poisson variables
 
+The difference in two Poisson means is not described by a simple distribution the way the difference in two Binomial probabilities is. If your sample size becomes very large, and your rate is not infinitesimally small, sometimes you can use a Normal confidence interval by the law of large numbers. But usually you have to do something a little more complex. For some options, see [here (for a simple summary)](http://ncss.wpengine.netdna-cdn.com/wp-content/themes/ncss/pdf/Procedures/PASS/Tests_for_Two_Poisson_Means.pdf), here [section 9.5 (for a full summary)](http://www.stat.wisc.edu/~wardrop/courses/371chapter9b.pdf) and [here (for one free online calculation)](http://www.evanmiller.org/ab-testing/poisson-means.html). If you have access to some statistical software such as R (free distribution), this is a good time to use it because most programs will have an implementation of these tests you can use.
+
+If you aren’t confident in the Poisson assumption, or if you just want something more practical - and frankly, more common in engineering, see the Empirical Variability section of this lesson.
+
+
+#### Subsection title
+Text 
 
 
 
