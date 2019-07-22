@@ -118,11 +118,13 @@ words, this is the error of failing to accept an alternative hypothesis when you
 * **Confidence level** = 1 - _&alpha;_
 * 1 - _&beta;_ = **sensitivity** (often ~80%) -> in general, you'd want your experiment to have a high level of sensitivity.
 
-** Why the need to balance &alpha; & &beta
+**Why the need to balance _&alpha;_ & _&beta;_?**
+
 	* in general, we want to have a high level of sensitivity at the practical significance boundary, often around 80%
+	
 	* As your sample size goes up with larger samples:
-		* &alpha; remains the same
-		* &beta; is lower, or the power goes up
+		* alpha remains the same
+		* beta becomes lower, or the power goes up
 
 
 #### Online sample size calculator
